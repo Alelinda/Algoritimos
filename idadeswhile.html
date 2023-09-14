@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idades</title>
+</head>
+<body>
+    <script>
+        // Criei um array de idades
+var idades = [15, 24, 32, 45, 68];
+
+// Usei o While para ordenar as idades em ordem decrescente
+var troca;
+do {
+    troca = false;
+    for (var i = 0; i < idades.length - 1; i++) {
+        if (idades[i] < idades[i + 1]) {
+            // Troquei as idades de posição
+            var temp = idades[i];
+            idades[i] = idades[i + 1];
+            idades[i + 1] = temp;
+            troca = true;
+        }
+    }
+} while (troca);
+
+// Imprimiu as idades ordenadas em ordem decrescente
+for (var j = 0; j < idades.length; j++) {
+    console.log(idades[j]);
+}
+
+    </script>
+</body>
+</html>
