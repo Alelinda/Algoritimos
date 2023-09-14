@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Matriz de nomes das ferramentas 
+var ferramentas = ["Martelo", "Lixadeira", "Alicate", "Trena", "Serra"];
+
+// Ferramentas que estou procurando
+var ferramentaProcurada = "Martelo";
+
+// Variável para armazenar o resultado da busca
+var encontrado = false;
+
+// Usei a estrutura switch/case para buscar a ferramenta
+switch (ferramentaProcurada) {
+    case "Martelo":
+        encontrado = true;
+        console.log("Martelo foi encontrado no banco de dados de ferramentas.");
+        break;
+    default:
+        console.log("A ferramenta procurada não foi encontrada.");
+}
+
+// Se a ferramenta foi encontrada, você pode realizar ações adicionais aqui
+if (encontrado) {
+    // Faça algo com o "ferramenta" encontrado
+    // Por exemplo, exiba uma mensagem especial ou realize outra operação.
+}
+
+    </script>
+</body>
+</html>
