@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chekin</title>
+</head>
+<body>
+   <script>
+    // Dados de usuário predefinidos 
+var usuarioPredefinido = "alelinda";
+var senhaPredefinida = "eueueu";
+
+// Dados de entrada do usuário 
+var usuarioDigitado = prompt("Digite o nome de usuário:");
+var senhaDigitada = prompt("Digite a senha:");
+
+// Verifique se os dados de entrada correspondem aos dados predefinidos
+if (usuarioDigitado === usuarioPredefinido && senhaDigitada === senhaPredefinida) {
+    console.log("Login bem-sucedido. Bem-vindo, " + usuarioPredefinido + "!");
+} else {
+    console.log("Login falhou. Verifique seu nome de usuário e senha.");
+}
+
+   </script> 
+</body>
+</html>
