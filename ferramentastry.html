@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Função de busca no banco de dados simulada
+ function buscarNoBancoDeDados() {
+    // Simulando uma busca que retornaria falso (não encontrado)
+    return false;
+}
+
+// Função que realiza a busca e trata exceções
+ function realizarBusca() {
+    try {
+        var resultado = buscarNoBancoDeDados();
+        if (!resultado) {
+            throw new Error("A ferramenta procurado não foi encontrada no banco de dados.");
+        }
+
+        // Se a busca for bem-sucedida, continue com o processamento aqui
+        console.log("Ferramenta encontrado com sucesso!");
+    } catch (erro) {
+        // Tratamento de exceção: Personalize a mensagem de erro
+        console.error("Erro: " + erro.message);
+    }
+}
+
+// Chame a função para realizar a busca
+ realizarBusca();
+</script>
+
+</body>
+</html>
