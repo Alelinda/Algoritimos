@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras no Mercado</title>
+</head>
+<body>
+    
+    <script>
+        // Array de nomes
+var produtos = ["Aroz", "Feijão", "Leite", "Bolacha", "Detergente"];
+
+// Loop for para ordenar os nomes em ordem alfabética
+for (var i = 0; i < produtos.length - 1; i++) {
+    for (var j = i + 1; j < produtos.length; j++) {
+        if (produtos[i] > produtos[j]) {
+            // Troquei os nomes de posição
+            var temp = produtos[i];
+            produtos[i] = produtos[j];
+            produtos[j] = temp;
+        }
+    }
+}
+
+// Vai mprimir os nomes ordenados
+for (var k = 0; k < produtos.length; k++) {
+    console.log(produtos[k]);
+}
+    </script>
+    
+</body>
+</html>
